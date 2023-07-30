@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: gke-tutorial-deployment
-          image: gcr.io/calcium-sunbeam-386105/app:v1
+          image: IMAGE
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
