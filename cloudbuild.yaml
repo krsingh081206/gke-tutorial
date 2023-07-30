@@ -46,6 +46,9 @@ steps:
       - apply
       - -f
       - k8s/
+    env:
+      - CLOUDSDK_COMPUTE_ZONE=${_ZONE}
+      - CLOUDSDK_CONTAINER_CLUSTER=${_CLUSTER}
   - name: gcr.io/cloud-builders/gcloud
     id: Tag
     args:
