@@ -41,4 +41,5 @@ app.get('/decrypt', ({ query }, res) => {
 
 app.listen(PORT, () => {
   console.log(`Listening on ${PORT}, LOG_LEVEL: ${LOG_LEVEL}, NODE_ENV: ${NODE_ENV}`);
+  console.log(`Hello Server v 0.2`);
 });
